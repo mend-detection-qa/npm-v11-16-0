@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.2",
+  "pm": "npm",
+  "pm_version_tested": "11.16.0",
+  "pm_version_under_test": "11.16.0",
+  "source_file": "package-lock.json",
+  "generated_at": "2026-05-27T00:00:00Z",
+  "root": {
+    "name": "allow-scripts-probe",
+    "version": "1.0.0",
+    "dependencies": [
+      "chalk",
+      "esbuild",
+      "husky"
+    ]
+  },
+  "packages": {
+    "chalk": {
+      "version": "5.4.1",
+      "source": "registry",
+      "source_detail": {
+        "resolved": "https://registry.npmjs.org/chalk/-/chalk-5.4.1.tgz"
+      },
+      "group": "main",
+      "optional": false,
+      "marker": null,
+      "extras_activating_this": [],
+      "dependencies": []
+    },
+    "esbuild": {
+      "version": "0.25.4",
+      "source": "registry",
+      "source_detail": {
+        "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.25.4.tgz",
+        "has_install_script": true,
+        "allow_scripts_approved": true
+      },
+      "group": "main",
+      "optional": false,
+      "marker": null,
+      "extras_activating_this": [],
+      "dependencies": [
+        "@esbuild/linux-x64"
+      ]
+    },
+    "@esbuild/linux-x64": {
+      "version": "0.25.4",
+      "source": "registry",
+      "source_detail": {
+        "resolved": "https://registry.npmjs.org/@esbuild/linux-x64/-/linux-x64-0.25.4.tgz",
+        "cpu": ["x64"],
+        "os": ["linux"]
+      },
+      "group": "optional",
+      "optional": true,
+      "marker": null,
+      "extras_activating_this": [],
+      "dependencies": []
+    },
+    "husky": {
+      "version": "9.1.7",
+      "source": "registry",
+      "source_detail": {
+        "resolved": "https://registry.npmjs.org/husky/-/husky-9.1.7.tgz",
+        "has_install_script": true,
+        "allow_scripts_approved": false
+      },
+      "group": "main",
+      "optional": false,
+      "marker": null,
+      "extras_activating_this": [],
+      "dependencies": []
+    }
+  },
+  "project_metadata": {
+    "groups": ["main", "optional"]
+  },
+  "warnings": [
+    "The top-level 'allowScripts' field in package.json is install-script policy metadata (npm v11.16.0 Phase 1) and must not be parsed as a dependency scope or dependency group. It is not part of the npm dependency specification."
+  ]
+}
